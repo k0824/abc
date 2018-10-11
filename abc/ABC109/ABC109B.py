@@ -6,7 +6,7 @@ for i in range(n):
 for j in range(n-1):
     if li[j][-1] == li[j+1][0]:
         for k in range(j):
-            if li[j] == li[k]:
+            if li[j] == li[k] or li[-1] == li[k]:
                 print('No')
                 exit()
     else:
